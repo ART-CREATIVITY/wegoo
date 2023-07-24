@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="map-pin-fill" transform="translate(0)">
+    <path id="Path_12" data-name="Path 12" d="M0,0H24V24H0Z" fill="none"/>
+    <path id="Path_13" data-name="Path 13" d="M18.364,17.364,12,23.728,5.636,17.364a9,9,0,1,1,12.728,0ZM12,15a4,4,0,1,0-4-4A4,4,0,0,0,12,15Zm0-2a2,2,0,1,1,2-2A2,2,0,0,1,12,13Z" fill="#bac0cd"/>
+  </g>
+</svg>

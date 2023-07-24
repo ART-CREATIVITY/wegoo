@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+    font-family: "Roboto", Helvetica, sans-serif !important;
+    font-size: 1.1rem;
+}
+
+.navbar {
+    height: 90px;
+    background-color: white;
+}
+.splash-header {
+    background: linear-gradient(180deg, rgba(52,151,253,1) 0%, rgba(255,255,255,0.2903536414565826) 100%), url('/assets/images/splash.jpeg');
+    height: calc(100% - 90px);
+    color: white;
+}
+
+.nav-item {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+
+}
+
+.nav-item a {
+    color: rgb(134, 134, 134);
+}
+
+.active {
+    color: rgba(52,151,253,1) !important;
+}
+
+.btn {
+    border-radius: 4px !important;
+}
+
+.destination img {
+    height: 250px;
+    object-fit: cover;
+}

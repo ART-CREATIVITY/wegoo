@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56.534" height="56.534" viewBox="0 0 56.534 56.534">
+  <g id="Group_25" data-name="Group 25" transform="translate(0 0)">
+    <g id="Ellipse_39" data-name="Ellipse 39" fill="#3497fd" stroke="#fff" stroke-width="2">
+      <circle cx="28.267" cy="28.267" r="28.267" stroke="none"/>
+      <circle cx="28.267" cy="28.267" r="27.267" fill="none"/>
+    </g>
+    <g id="car-fill" transform="translate(15.777 15.777)">
+      <path id="Path_24" data-name="Path 24" d="M0,0H26.295V26.295H0Z" fill="none"/>
+      <path id="Path_25" data-name="Path 25" d="M19.88,21.53H5.155v1.1a1.074,1.074,0,0,1-1.052,1.1H3.052A1.074,1.074,0,0,1,2,22.626V12.765L4.643,5.422A2.109,2.109,0,0,1,6.613,4h11.81a2.109,2.109,0,0,1,1.97,1.422l2.643,7.343v9.861a1.074,1.074,0,0,1-1.052,1.1H20.932a1.074,1.074,0,0,1-1.052-1.1ZM4.247,12.765H20.789L18.423,6.191H6.613Zm2.486,5.478A1.645,1.645,0,1,0,5.155,16.6,1.612,1.612,0,0,0,6.733,18.243Zm11.57,0A1.645,1.645,0,1,0,16.725,16.6,1.612,1.612,0,0,0,18.3,18.243Z" transform="translate(0.629 -0.056)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
