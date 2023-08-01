@@ -5,9 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/css/app.css')}}">
   </head>
   <body>
@@ -67,6 +66,19 @@
     </header>
 
     <main>
+
+        <section class="py-5" >
+            <div class="container">
+                <div class="d-flex justify-content-between">
+                    <h2>Tendance</h2>
+
+                </div>
+
+                <x-widgets.travel-card :image="$flight->image"
+                    :name="$flight->name" :country="$flight->country->name" :continent="$flight->country->continent" :mode="'large'"
+                ></x-widgets.travel-card>
+            </div>
+        </section>
         <section class="py-5">
             <div class="container">
                 <div class="d-flex justify-content-between">
@@ -74,39 +86,15 @@
                     <button class="btn btn-light">VOIR +</button>
                 </div>
 
-                <div class="row destination">
-                    <div class="col-12 col-md-6 col-lg-4 mb-2">
-                        <div class="card h-100" >
-                            <img src="{{asset('assets/images/1.jpg')}}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
+                <div class="row">
+                    @foreach ($flights as $item)
+                        <div class="col-12 col-md-6 col-lg-4 mb-2">
+                            <x-widgets.travel-card :image="$item->image"
+                                :name="$item->name" :country="$item->country->name" :continent="$item->country->continent" :mode="'large'"
+                            ></x-widgets.travel-card>
                         </div>
-                    </div>
+                    @endforeach
 
-                    <div class="col-12 col-md-6 col-lg-4 mb-2">
-                        <div class="card h-100" >
-                            <img src="{{asset('assets/images/2.jpg')}}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-md-6 col-lg-4 mb-2">
-                        <div class="card h-100" >
-                            <img src="{{asset('assets/images/4a.jpg')}}" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                              <a href="#" class="btn btn-primary">Go somewhere</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -116,6 +104,6 @@
 
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="{{asset('assets/js/app.js')}}"></script>
   </body>
 </html>
